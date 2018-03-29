@@ -7,16 +7,11 @@ A small library that adds commas to numbers
 
 ## Installation
 
-  `npm install @dennisjade/number-formatter`
+  `npm install @dennisjade/robinsons-sales-util`
 
 ## Usage
 
-    var numFormatter = require('@dennisjade/number-formatter');
-
-    var formattedNum = numFormatter(35666);
-  
-  
-  Output should be `35,666`
+    var salesUtil = require('@dennisjade/robinsons-sales-util');
 
 
 ## Tests

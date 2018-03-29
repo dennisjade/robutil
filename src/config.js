@@ -1,0 +1,5 @@
+const config = {
+  headerToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnQiOiJyc2giLCJlbnYiOiJzdGFnaW5nIiwidXVpZCI6IjRmODgyYzdlLWE2NGMtNGQzYS1iNjQxLTM2NmE3ZGM4ODFlZSJ9.NBS2CQGdoF0iCQapDGWc5R2Vtk0bWLHMllDunbZU0DM'
+};
+
+export default config;
