@@ -3,5 +3,5 @@ var tokenVerify  = require('./lib/jwt');
 
 
 module.exports = {
-  tokenVerify
+  tokenVerify: tokenVerify
 };
