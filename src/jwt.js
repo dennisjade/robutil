@@ -1,6 +1,6 @@
 import jws from 'jws';
 import _ from 'lodash';
-import config from '../config';
+import config from './config';
 
 const isString = obj => typeof obj === 'string';
 
