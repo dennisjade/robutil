@@ -1,5 +1,5 @@
 'use strict';
-import tokenVerify from './lib/jwt';
+var tokenVerify  = require('./lib/jwt');
 
 
 module.exports = {
