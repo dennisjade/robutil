@@ -24,11 +24,11 @@ function getToken(headers) {
   }
 }
 
-const tokenVerify = headers => {
+export const verify = headers => {
   if (!headers.hasOwnProperty('x-shopify-hmac-sha256') ) {
     return _.isEqual(tokenPayload(config.headerToken), getToken(headers));
   }
   return true;
 };
 
-export default tokenVerify;
+export default verify;
