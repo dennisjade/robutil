@@ -1,5 +1,5 @@
 'use strict';
-import tokenVerify from './src/jwt';
+import tokenVerify from './lib/jwt';
 
 
 module.exports = {
