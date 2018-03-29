@@ -1,6 +1,6 @@
 {
   "name": "robinsons-sales-util",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Utility for Robinsons application",
   "main": "lib/index.js",
   "scripts": {
