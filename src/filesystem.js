@@ -10,7 +10,7 @@ if (!fs.existsSync('files/capillary')) {
   fs.mkdirSync('files/capillary');
 }
 
-export const deleteLocalFile = path => new Promise((resolve, reject) => {
+export const remove = path => new Promise((resolve, reject) => {
   fs.unlink(path, (err) => {
     if (err) return reject(err);
     console.log(`successfully deleted ${path}`);
@@ -18,7 +18,7 @@ export const deleteLocalFile = path => new Promise((resolve, reject) => {
   });
 });
 
-export const isFileExist = path => new Promise((resolve) => {
+export const isExist = path => new Promise((resolve) => {
   fs.open(path, 'r', (err) => {
     if (err) {
       if (err.code === 'ENOENT') {
@@ -32,14 +32,14 @@ export const isFileExist = path => new Promise((resolve) => {
   });
 });
 
-export const getLocalFiles = pathFile => new Promise(async (resolve, reject) => {
+export const get = pathFile => new Promise(async (resolve, reject) => {
   fs.readdir(pathFile, 'utf8', (err, files) => {
     if (err) return reject(err);
     return resolve(files);
   });
 });
 
-export const readLocalFile = pathFile => new Promise(async (resolve, reject) => {
+export const read = pathFile => new Promise(async (resolve, reject) => {
   fs.readFile(pathFile, 'utf8', (err, data) => {
     if (err) return reject(err);
     return resolve(data);
@@ -62,15 +62,15 @@ export const create = async (name, data, withTitle) => {
   await fs.writeFileSync(`files/${name}`, tmpData, options);
 };
 
-export const deleteFile = (name) => {
-  if (!name) {
-    return;
-  }
-
-  fs.unlink(`files/${name}`, (err) => {
-    if (err) {
-      return err;
-    }
-    return null;
-  });
-};
+// export const remove = (name) => {
+//   if (!name) {
+//     return;
+//   }
+//
+//   fs.unlink(`files/${name}`, (err) => {
+//     if (err) {
+//       return err;
+//     }
+//     return null;
+//   });
+// };
