@@ -4,7 +4,8 @@ node_js:
 install:
   - yarn install
   - yarn build
-
+cache:
+  yarn: true
 script:
   - yarn cover
 

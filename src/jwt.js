@@ -1,6 +1,5 @@
 import jws from 'jws';
 import _ from 'lodash';
-import config from './config';
 
 const isString = obj => typeof obj === 'string';
 
@@ -24,9 +23,9 @@ function getToken(headers) {
   }
 }
 
-export const verify = headers => {
+export const verify = (headerToken, headers) => {
   if (!headers.hasOwnProperty('x-shopify-hmac-sha256') ) {
-    return _.isEqual(tokenPayload(config.headerToken), getToken(headers));
+    return _.isEqual(tokenPayload(headerToken), getToken(headers));
   }
   return true;
 };
