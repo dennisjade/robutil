@@ -15,7 +15,6 @@ export const log = process.env.NODE_ENV !== 'test' ?
     ],
   }) :
   {
-    log: () => {},
     info: () => {},
     warn: () => {},
     error: () => {},
