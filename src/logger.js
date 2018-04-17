@@ -1,6 +1,6 @@
 import winston from 'winston';
 
-const logger = process.env.NODE_ENV !== 'test' ?
+export const logger = process.env.NODE_ENV !== 'test' ?
   new (winston.Logger)({
     transports: [
       new (winston.transports.Console)({
@@ -21,11 +21,4 @@ const logger = process.env.NODE_ENV !== 'test' ?
     error: () => {},
     debug: () => {},
   };
-/**
- * Usage:
- * logger.info(‘my log’);
- * logger.warn(‘my warn’);
- * logger.error(‘error’);
- */
-export default logger;
 
