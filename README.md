@@ -1,17 +1,17 @@
 [![Build Status](https://travis-ci.org/dennisjade/robinsons-sales-util.svg?branch=master)](https://travis-ci.org/dennisjade/robinsons-sales-util)
-[![Coverage Status](https://coveralls.io/repos/github/dennisjade/robinsons-sales-util/badge.svg?branch=master)](https://coveralls.io/github/dennisjade/robinsons-sales-util?branch=master)
-Robinson Sales Util
+[![Coverage Status](https://coveralls.io/repos/github/dennisjade/robutil/badge.svg?branch=master)](https://coveralls.io/github/dennisjade/robutil?branch=master)
+ROBUTIL
 ===================
 
-A small library that adds commas to numbers
+A small utility library for my projects
 
 ## Installation
 
-  `npm install @dennisjade/robinsons-sales-util`
+  `npm install @dennisjade/robutil`
 
 ## Usage
 
-    var salesUtil = require('@dennisjade/robinsons-sales-util');
+    var salesUtil = require('@dennisjade/robutil');
 
 
 ## Tests
