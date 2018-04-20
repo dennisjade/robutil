@@ -1,7 +1,7 @@
 {
-  "name": "robinsons-sales-util",
-  "version": "0.1.1",
-  "description": "Utility for Robinsons application",
+  "name": "robutil",
+  "version": "0.1.0",
+  "description": "A utility to support personal projects",
   "main": "lib/index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha --reporter spec",
@@ -15,18 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dennisjade/robinsons-sales-util.git"
+    "url": "git+https://github.com/dennisjade/robutil.git"
   },
   "keywords": [
-    "robinsons",
-    "sales"
+    "utility"
   ],
   "author": "Dennis Jade Toribio <dennisjade@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dennisjade/robinsons-sales-util/issues"
+    "url": "https://github.com/dennisjade/robutil/issues"
   },
-  "homepage": "https://github.com/dennisjade/robinsons-sales-util#readme",
+  "homepage": "https://github.com/dennisjade/robutil#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
