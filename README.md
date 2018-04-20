@@ -11,7 +11,7 @@ A small utility library for my projects
 
 ## Usage
 
-    var salesUtil = require('@dennisjade/robutil');
+    var robutil = require('@dennisjade/robutil');
 
 
 ## Tests
