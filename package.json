@@ -1,5 +1,5 @@
 {
-  "name": "robutil",
+  "name": "robutils",
   "version": "0.1.0",
   "description": "A utility to support personal projects",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dennisjade/robutil.git"
+    "url": "git+https://github.com/dennisjade/robutils.git"
   },
   "keywords": [
     "utility"
@@ -23,9 +23,9 @@
   "author": "Dennis Jade Toribio <dennisjade@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dennisjade/robutil/issues"
+    "url": "https://github.com/dennisjade/robutils/issues"
   },
-  "homepage": "https://github.com/dennisjade/robutil#readme",
+  "homepage": "https://github.com/dennisjade/robutils#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -40,6 +40,7 @@
     "jws": "^3.1.4",
     "lodash": "^4.17.5",
     "moment-timezone": "^0.5.14",
+    "requestretry": "^1.13.0",
     "winston": "^2.4.1"
   }
 }

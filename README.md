@@ -7,17 +7,26 @@ A small utility library for my projects
 
 ## Installation
 
-  `npm install @dennisjade/robutil`
+  `npm install @dennisjade/robutils`
 
 ## Usage
 
-    var robutil = require('@dennisjade/robutil');
+    var robutils = require('@dennisjade/robutils');
 
+
+## Available methods
+
+    - token  = robutils.token.verify(source, req.headers)
+    - logger = robutils.logger.log.<info/error/warn>('you msg')
+    - parser = robutils.
+    - config = robutils.config.get(owner, environment, configObject)
+```sh
+      configObject = {
+        CONFIG_URL: ''https://localhost:6062,
+        HEADER_TOKEN: 'abcdefghijklmnopqrstwxyz'
+      }
+```
 
 ## Tests
 
   `npm test`
-
-## Contributing
-
-In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
