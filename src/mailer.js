@@ -23,13 +23,13 @@ const sendEmail = (mailOptions, smtpTransport) =>
     return resolve(response);
   }));
 
-const sendEmailNotification = async (requestBody, from = defaultFrom, to = defaultTo, mailCreds) => {
+const sendEmailNotification = async (requestBody, from = defaultFrom, to = defaultTo, mailCreds, store) => {
   try {
     const transporter = await getTransporter(mailCreds);
     const mailOptions = {
       from,
       to,
-      subject: `${requestBody.subject} (store name: ${config.STORE_NAME})`,
+      subject: `${requestBody.subject} (store name: ${store})`,
       html: requestBody.body,
     };
     if (requestBody.filePath) {
