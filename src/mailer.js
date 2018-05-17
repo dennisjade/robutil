@@ -23,7 +23,7 @@ const sendEmail = (mailOptions, smtpTransport) =>
     return resolve(response);
   }));
 
-const sendEmailNotification = async (requestBody, from = defaultFrom, to = defaultTo, mailCreds, store) => {
+const send = async (requestBody, from = defaultFrom, to = defaultTo, mailCreds, store) => {
   try {
     const transporter = await getTransporter(mailCreds);
     const mailOptions = {
@@ -47,4 +47,4 @@ const sendEmailNotification = async (requestBody, from = defaultFrom, to = defau
   }
 };
 
-export default sendEmailNotification;
+export default send;
