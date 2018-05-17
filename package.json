@@ -1,6 +1,6 @@
 {
   "name": "robutils",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A utility to support personal projects",
   "main": "lib/index.js",
   "scripts": {
