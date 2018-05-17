@@ -23,7 +23,7 @@ const sendEmail = (mailOptions, smtpTransport) =>
     return resolve(response);
   }));
 
-const send = async (requestBody, from = defaultFrom, to = defaultTo, mailCreds, store) => {
+export const send = async (requestBody, from = defaultFrom, to = defaultTo, mailCreds, store) => {
   try {
     const transporter = await getTransporter(mailCreds);
     const mailOptions = {
@@ -46,5 +46,3 @@ const send = async (requestBody, from = defaultFrom, to = defaultTo, mailCreds, 
     return e;
   }
 };
-
-export default send;
